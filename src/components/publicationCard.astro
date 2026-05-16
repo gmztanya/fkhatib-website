@@ -3,31 +3,31 @@ import Link from "./link.astro";
 import Button from "./button.astro";
 import Card from "./card.astro";
 
-const { publication } = Astro.props;
+const { publication, tinted = false } = Astro.props;
 
 const { title, authors, journal, year, doi, pdf } = publication;
 ---
 
-<Card class="">
+<Card variant="accent" class={tinted ? "bg-[var(--color-secondary-tinted)]" : ""}>
   <!-- Top Meta Data -->
-  <p class="text-sm text-muted mb-2">
+  <p class="text-sm text-muted mb-1">
     {year} · {journal}
   </p>
 
   <!-- Title -->
-  <h3 class="text-lg font-semibold text-strong mb-2">
+  <h3 class="text-lg font-semibold text-strong">
     {title}
   </h3>
 
   <!-- Authors -->
-  <p class="text-sm italic text-strong mb-3 line-clamp-2">
+  <p class="text-sm italic text-strong mb-1 line-clamp-2">
     {authors.join(", ")}
   </p>
 
   <!-- Doi (Only if exists and not N/A) -->
   {
     doi && doi.toLowerCase() !== "n/a" && (
-      <Link href={doi} external newTab variant="muted" class="mb-3 block">
+      <Link href={doi} external newTab variant="muted" class="mb-1 block">
         {doi.replace("https://", "")}
       </Link>
     )

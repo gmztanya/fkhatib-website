@@ -1,0 +1,102 @@
+---
+import "../styles/global.css";
+import Header from "../components/header.astro";
+import Footer from "../components/footer.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href={`${import.meta.env.BASE_URL}/favicon.ico`} />
+    <title>Khatib Lab</title>
+  </head>
+
+  <body class="min-h-screen flex flex-col bg-[#F8FAF5]">
+
+    <Header />
+
+    <main class="relative flex-grow overflow-hidden">
+
+      <!-- TOP LEFT BLUR -->
+      <div
+      class="
+        pointer-events-none
+        absolute
+        top-[-80px]
+        left-[-120px]
+        h-[32rem]
+        w-[32rem]
+        rounded-full
+        bg-[var(--color-secondary)]/[0.25]
+        blur-3xl
+      "
+    ></div>
+
+      <!-- BOTTOM RIGHT BLUR -->
+      <div
+        class="
+          pointer-events-none
+          absolute
+          bottom-[-120px]
+          right-[-80px]
+          h-[26rem]
+          w-[26rem]
+          rounded-full
+          bg-[var(--color-secondary)]/[0.25]
+          blur-3xl
+        "
+      ></div>
+
+      <!-- TOP RIGHT DOT GRID -->
+      <div
+        class="
+          pointer-events-none
+          absolute
+          top-4 right-4
+          md:top-8 md:right-10
+          h-16 w-16
+          md:h-24 md:w-24
+          xl:h-28 xl:w-28
+          opacity-60
+        "
+        style="
+          background-image: radial-gradient(
+            rgba(138, 184, 63, 0.75) 1.5px,
+            transparent 1.5px
+          );
+          background-size: 14px 14px;
+        "
+      ></div>
+
+      <!-- BOTTOM LEFT DOT GRID -->
+      <div
+        class="
+          pointer-events-none
+          absolute
+          bottom-10
+          left-6
+          h-14 w-14
+          md:h-20 md:w-20
+          xl:h-24 xl:w-24
+        "
+        style="
+          background-image: radial-gradient(
+            rgba(138, 184, 63, 0.7) 1.4px,
+            transparent 1.4px
+          );
+          background-size: 14px 14px;
+        "
+      ></div>
+
+      <!-- PAGE CONTENT -->
+      <div class="relative z-10 px-6 py-6 sm:px-20 sm:py-8">
+        <slot />
+      </div>
+
+    </main>
+
+    <Footer />
+
+  </body>
+</html>

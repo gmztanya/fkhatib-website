@@ -1,30 +1,24 @@
 ---
 import MainLayout from "../layouts/mainLayout.astro";
+import BgLayout from "../layouts/bgLayout.astro";
 import Heading from "../components/pageHeading.astro";
 import PageSection from "../components/pageSection.astro";
 import Button from "../components/button.astro";
 import Link from "../components/link.astro";
-import Divider from "../components/divider.astro";
 import Card from "../components/card.astro";
 import AppImage from "../components/appImage.astro";
 ---
 
-<MainLayout>
+<BgLayout>
   <PageSection>
     <!-- Heading -->
-    <div class="text-center">
-      <Heading level="h1" size="xl">
-        Scientific discovery by video game players
-      </Heading>
-
-      <div class="mb-5 flex justify-center">
-        <Divider class="bg-[var(--color-secondary)]" />
-      </div>
-    </div>
+    <Heading level="h1" variant="title" align="center">
+      Scientific discovery by video game players
+    </Heading>
 
     <!-- Content Cards -->
     <div class="grid grid-cols-1 xl:grid-cols-3 gap-4">
-      <Card>
+      <Card variant="accent">
         <div class="text-center px-2">
           <div class="mb-5 flex justify-center">
             <AppImage
@@ -42,7 +36,7 @@ import AppImage from "../components/appImage.astro";
         </div>
       </Card>
 
-      <Card>
+      <Card variant="accent">
         <div class="text-center px-2">
           <div class="mb-5 flex justify-center">
             <AppImage
@@ -60,7 +54,7 @@ import AppImage from "../components/appImage.astro";
         </div>
       </Card>
 
-      <Card>
+      <Card variant="accent">
         <div class="text-center px-2">
           <div class="mb-5 flex justify-center">
             <AppImage
@@ -90,4 +84,4 @@ import AppImage from "../components/appImage.astro";
       </Link>
     </div>
   </PageSection>
-</MainLayout>
+</BgLayout>

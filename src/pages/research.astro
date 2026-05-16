@@ -1,40 +1,39 @@
 ---
 import MainLayout from "../layouts/mainLayout.astro";
+
 import Heading from "../components/pageHeading.astro";
 import PageSection from "../components/pageSection.astro";
+import Card from "../components/card.astro";
 import Link from "../components/link.astro";
-import Divider from "../components/divider.astro";
 import AppImage from "../components/appImage.astro";
 ---
 
 <MainLayout>
   <PageSection>
-    <!-- Title -->
-    <Heading level="h1" size="xl">
-      Scientific discovery by video game players
-    </Heading>
-    <Divider />
+    <!-- Main Grid -->
+    <div class="grid xl:grid-cols-[1.1fr_0.9fr] gap-4 items-start">
+      <!-- LEFT SIDE -->
+      <div class="space-y-5">
+        <!-- Title -->
+        <Heading level="h1" variant="title">
+          Scientific discovery by video game players
+        </Heading>
 
-    <div>
-      <!-- Intro (full width) -->
-      <p class="mb-2">
-        The ability to determine the three dimensional structure of
-        disease-related proteins is essential to our understanding of how they
-        work and how they can be successfully targeted with drugs, yet the gap
-        between the number of known protein sequences and the number of solved
-        protein structures is growing every year. The unusual approach of
-        enlisting online gamers to tackle this problem has shown promise with
-        the protein-folding videogame Foldit. By leveraging human puzzle
-        solving, pattern-recognition, and 3D spatial reasoning, Foldit players
-        are able to outperform many state of the art protein structure
-        prediction methods.
-      </p>
-
-      <!-- Grid Section -->
-      <div class="grid xl:grid-cols-[1.8fr_1fr] gap-8 items-start">
-        <!-- Left Side Content -->
-        <div class="">
-          <p class="mb-2">
+        <!-- Card 1 -->
+        <Card variant="accent" class="space-y-2">
+          <p class="indent-10">
+            The ability to determine the three dimensional structure of
+            disease-related proteins is essential to our understanding of how
+            they work and how they can be successfully targeted with drugs, yet
+            the gap between the number of known protein sequences and the number
+            of solved protein structures is growing every year. The unusual
+            approach of enlisting online gamers to tackle this problem has shown
+            promise with the protein-folding videogame Foldit. By leveraging
+            human puzzle solving, pattern-recognition, and 3D spatial reasoning,
+            Foldit players are able to outperform many state of the art protein
+            structure prediction methods.
+          </p>
+          <p class="indent-10">
             Foldit players have been most successful in the refinement of
             partially correct models. This field of structure prediction has
             shown promise in solving crystal structures by molecular replacement
@@ -44,8 +43,7 @@ import AppImage from "../components/appImage.astro";
             models of sufficient quality for successful MR and subsequent
             structure determination of a monomeric retroviral protease.
           </p>
-
-          <p class="mb-2">
+          <p class="indent-10">
             Starting from a low-resolution NMR model (red), Foldit players
             generated a model (green) of sufficient accuracy to provide an
             unambiguous molecular replacement solution, allowing rapid
@@ -54,21 +52,66 @@ import AppImage from "../components/appImage.astro";
             over a decade. Foldit players managed to produce this model in ten
             days without any experimental data.
           </p>
+        </Card>
 
-          <Link href="/contact" variant="primary" class="mb-2">
-              If you are an experimentalist with electron density data for a
-              structure you have been unable to solve, please contact us.
-          </Link>
-        </div>
+        <!-- CTA CARD -->
+        <Card variant="accent" class="bg-[var(--color-secondary-tinted)]">
+            <div class="flex gap-5 items-start">
+                <!-- Icon -->
+                <div class="h-14 w-14 rounded-full bg-[var(--color-secondary)]/10
+                flex items-center justify-center shrink-0"
+                >
+                <AppImage
+                    src="images/icons/mail.svg"
+                    alt="mail icon"
+                    variant="icon"
+                />
+                </div>
 
-        <!-- Right SIde Image -->
-        <div class="flex justify-center md:justify-start">
-          <AppImage
-            src="/images/protein.png"
-            alt="Protein structure"
-            class="w-2/3 md:w-3/4 xl:w-4/5 max-w-md drop-shadow-lg"
-          />
-        </div>
+                <!-- Content -->
+                <div class="space-y-2">
+                    <Link href="/contact" variant="primary" class="mb-2">
+                        If you are an experimentalist with electron density data for a
+                        structure you have been unable to solve, please contact us.
+                    </Link>
+                </div>
+            </div>
+        </Card>
+      </div>
+
+      <!-- RIGHT SIDE -->
+      <div class="xl:sticky xl:top-28">
+        <Card noPadding class="overflow-hidden">
+          <!-- Image Area -->
+          <div class="relative p-6">
+            <AppImage
+              src="/images/protein.png"
+              alt="Protein structure"
+              class="relative z-10 w-full max-w-lg mx-auto drop-shadow-xl" />
+          </div>
+
+          <!-- Legend -->
+          <div class="border-t border-[var(--color-border)] grid grid-cols-1 md:grid-cols-3">
+            <!-- Red -->
+            <div class="flex gap-3 items-start p-5">
+              <span class="h-4 w-4 rounded-full bg-red-600 mt-1 shrink-0"></span>
+              <p class="text-xs leading-relaxed">Low-resolution NMR model</p>
+            </div>
+
+            <!-- Green -->
+            <div class="flex gap-3 items-start p-5 border-t md:border-t-0 md:border-l border-[var(--color-border)]">
+              <span class="h-4 w-4 rounded-full bg-[var(--color-secondary)] mt-1 shrink-0"></span>
+              <p class="text-xs leading-relaxed">Foldit model generated by players</p>
+            </div>
+
+            <!-- Blue -->
+             <div class="flex gap-3 items-start p-5 border-t md:border-t-0 md:border-l border-[var(--color-border)]">
+              <span class="h-4 w-4 rounded-full bg-blue-600 mt-1 shrink-0"></span>
+              <p class="text-xs leading-relaxed">Crystal structure (ultimate solution)</p>
+            </div>
+
+          </div>
+        </Card>
       </div>
     </div>
   </PageSection>

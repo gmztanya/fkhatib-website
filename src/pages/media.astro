@@ -5,8 +5,6 @@ import Link from "../components/link.astro";
 import Heading from "../components/pageHeading.astro";
 import PageSection from "../components/pageSection.astro";
 import Card from "../components/card.astro";
-import Divider from "../components/divider.astro";
-import AppImage from "../components/appImage.astro";
 
 import media from "../data/media.json";
 
@@ -18,18 +16,22 @@ const allVideos = [...featuredVideos, ...moreVideos];
 
 <MainLayout>
     <PageSection class="space-y-4">
-        <Heading level="h1" size="xl"> Media </Heading>
-        <Divider />
+        <Heading level="h1" variant="title"> Media </Heading>
 
-        <p class="mt-3 text-neutral-600">
+        <!-- <p class="mt-3 text-neutral-600">
         Explore talks, interviews, media coverage, and public engagement related
         to our research.
-        </p>
+        </p> -->
+
+        <Card variant="tinted" class=" text-neutral-600">
+        Explore talks, interviews, media coverage, and public engagement related
+        to our research.
+        </Card>
 
         <!-- Media Container -->
         <section class="overflow-hidden p-0">
             <!-- Tab Navigation -->
-            <div class="grid grid-cols-2 w-fit">
+            <div class="grid grid-cols-2 w-fit mb-5">
                 <button id="videosTab" class="media-nav-btn active-media-nav" type="button">
                     <div class="flex flex-col items-center">
                         <p>Videos</p>
@@ -43,21 +45,21 @@ const allVideos = [...featuredVideos, ...moreVideos];
             </div>
 
             <!-- Videos Panel -->
-            <Card id="videosPanel">
+            <div id="videosPanel">
                 <div class="tab-panel p-2">
                     <div class="grid grid-cols-1 xl:grid-cols-2 gap-6">
                         {allVideos.map((video) => <VideoCard video={video} />)}
                     </div>
                 </div>
-            </Card>
+            </div>
 
             <!-- Other media Panel -->
-            <Card id="mediaPanel" class="hidden" style="padding:0!important">
+            <Card id="mediaPanel" class="hidden" noPadding>
                 <div class="divide-y divide-neutral-200">
                 {
                     otherMedia.map((item) => (
                     <Link
-                    class="group block p-5 transition-colors duration-300 hover:bg-[var(--color-secondary)]/[0.02]"
+                    class="group block p-5 transition-colors duration-300 hover:bg-[var(--color-secondary-tinted)]"
                     href={item.url}
                     newTab
                     >
@@ -70,7 +72,7 @@ const allVideos = [...featuredVideos, ...moreVideos];
                                 </div>
                                 <Heading
                                     level="h3"
-                                    size="sm"
+                                    variant="sm"
                                     class="transition-colors duration-300 group-hover:text-[var(--color-accent)]"
                                 >
                                     {item.title}

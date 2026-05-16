@@ -2,36 +2,37 @@
 import Card from "./card.astro";
 import Heading from "../components/pageHeading.astro";
 
-
 const { video } = Astro.props;
 const { title, subtitle, videoUrl } = video;
 ---
-<Card class="overflow-hidden" style="padding:0!important">
-  <!-- Video Container -->
-  <div class="video-container relative aspect-video" data-video-url={videoUrl}>
+
+<Card noPadding class="overflow-hidden flex flex-col h-full">
+  <!-- Video -->
+  <div class="video-container relative aspect-[16/8]" data-video-url={videoUrl}>
     <!-- Loader -->
-    <div class="loader absolute inset-0 flex flex-col items-center justify-center">
-      <p class="text-xs text-muted">
-        Loading video...
-      </p>
+    <div
+      class="loader absolute inset-0 flex flex-col items-center justify-center"
+    >
+      <p class="text-xs text-muted">Loading video...</p>
     </div>
   </div>
 
-  <!-- Content -->
-  <div class="px-4 pt-3 pb-4">
-    <Heading level="h3" size="md"> {title} </Heading>
-    {
-      subtitle && (
-        <p class="text-sm">
-          {subtitle}
-        </p>
-      )
-    }
+  <!-- Content Panel -->
+  <div
+    class="flex-1 border-l-4 border-l-[var(--color-secondary)]
+      bg-[var(--color-secondary-tinted)]
+      px-4 pt-3 pb-4"
+  >
+    <Heading level="h3" variant="md" noMargin>
+      {title}
+    </Heading>
+
+    {subtitle && <p class="text-sm mt-1 text-muted">{subtitle}</p>}
   </div>
 </Card>
 
 <script>
-  // Loading videos in iframes once they are ready to improve performance and user experience  
+  // Loading videos in iframes once they are ready to improve performance and user experience
   document.addEventListener("DOMContentLoaded", () => {
     const containers = document.querySelectorAll(".video-container");
 

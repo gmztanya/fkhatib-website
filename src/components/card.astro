@@ -1,13 +1,37 @@
 ---
 const {
+  variant = "default",
+  hover = true,
   class: className = "",
+  noPadding = false,
   ...rest
 } = Astro.props;
+
+const variants: any = {
+  default: "bg-[var(--color-bg)] border border-[var(--color-border)]",
+
+  accent:
+    "bg-[var(--color-bg)] border border-[var(--color-border)] border-l-4 border-l-[var(--color-secondary)]",
+
+  tinted:
+    "tinted-bg border border-[var(--color-secondary)]/20",
+
+  elevated:
+    "bg-[var(--color-bg)] border border-[var(--color-border)] shadow-md",
+};
+
+const hoverStyles = hover ? "transition-all duration-300 hover:shadow-md" : "";
+const paddingStyles = noPadding ? "" : "p-5";
+
+const styles = `
+  shadow-sm
+  ${variants[variant]}
+  ${paddingStyles}
+  ${hoverStyles}
+  ${className}
+`;
 ---
 
-<div
-  class={`bg-[var(--color-bg)] border border-[var(--color-border)] shadow-sm p-5 hover:shadow-md transition ${className}`}
-  {...rest}
->
+<div class={styles} {...rest}>
   <slot />
 </div>

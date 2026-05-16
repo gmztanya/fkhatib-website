@@ -1,22 +1,48 @@
 ---
+import Divider from "./divider.astro";
+
 const {
-  level = "h1",       // h1, h2, h3...
-  size = "xl",        // xl | lg | md | sm
+  level = "h1",
+  variant = "xl",
+  align = "left", // left | center
+  noMargin = false,
   class: className = "",
 } = Astro.props;
 
 const Tag = level;
 
-const sizes: any = {
+const variants: any = {
+  title: "flex items-stretch gap-3 text-3xl md:text-4xl font-bold",
+
   xl: "text-3xl md:text-4xl font-bold mb-4",
+
   lg: "text-xl md:text-2xl font-semibold leading-tight mb-3",
+
   md: "text-lg md:text-xl font-semibold leading-snug mb-2",
-  sm: "text-base font-semibold leading-snug mb-1"
+
+  sm: "text-base font-semibold leading-snug mb-1",
 };
 
-const styles = `${sizes[size]} ${className}`;
+const styles = `${variants[variant]} ${className}`;
+
+const isCentered = align === "center";
+const marginReset = noMargin ? "!mb-0" : "";
 ---
 
-<Tag class={styles}>
-  <slot />
-</Tag>
+{
+  variant === "title" ? (
+    <div class={`mb-6 ${isCentered ? "text-center" : ""}`}>
+      <Tag class={`${styles} item-stretch ${marginReset} ${isCentered ? "justify-center" : ""}`}>
+        <slot />
+      </Tag>
+
+      <div class={`mt-5 ${isCentered ? "flex justify-center" : ""}`}>
+        <Divider class="mt-5 w-16 h-1 rounded-full bg-[var(--color-secondary)]"/>
+      </div>
+    </div>
+  ) : (
+    <Tag class={`${styles} ${marginReset}`}>
+      <slot />
+    </Tag>
+  )
+}
