@@ -8,16 +8,16 @@ const {
 } = Astro.props;
 
 const variants: any = {
-  default: "bg-[var(--color-bg)] border border-[var(--color-border)]",
+  default: "bg-[var(--color-white)] border border-[var(--color-border)]",
 
   accent:
-    "bg-[var(--color-bg)] border border-[var(--color-border)] border-l-4 border-l-[var(--color-secondary)]",
+    "bg-[var(--color-white)] border border-[var(--color-border)] border-l-4 border-l-[var(--color-secondary)]",
 
   tinted:
     "tinted-bg border border-[var(--color-secondary)]/20",
 
   elevated:
-    "bg-[var(--color-bg)] border border-[var(--color-border)] shadow-md",
+    "bg-[var(--color-white)] border border-[var(--color-border)] shadow-md",
 };
 
 const hoverStyles = hover ? "transition-all duration-300 hover:shadow-md" : "";

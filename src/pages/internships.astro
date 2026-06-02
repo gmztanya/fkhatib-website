@@ -1,5 +1,7 @@
 ---
 import MainLayout from "../layouts/mainLayout.astro";
+import BgLayout from "../layouts/bgLayout.astro";
+
 import Heading from "../components/pageHeading.astro";
 import PageSection from "../components/pageSection.astro";
 import Button from "../components/button.astro";
@@ -8,12 +10,12 @@ import AppImage from "../components/appImage.astro";
 import Card from "../components/card.astro";
 ---
 
-<MainLayout>
+<BgLayout>
   <PageSection class="space-y-12">
     <!-- Main Content -->
     <section
       class="grid
-        lg:grid-cols-2
+        xl:grid-cols-2
         gap-12
         items-center"
     >
@@ -74,4 +76,4 @@ import Card from "../components/card.astro";
       </div>
     </Card>
   </PageSection>
-</MainLayout>
+</BgLayout>

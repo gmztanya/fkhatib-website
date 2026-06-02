@@ -16,7 +16,7 @@ import Footer from "../components/footer.astro";
 
     <Header />
 
-    <main class="relative flex-grow overflow-hidden">
+    <main class="relative overflow-hidden flex-grow w-full px-6 py-6 sm:px-10 sm:py-8">
 
       <!-- TOP LEFT BLUR -->
       <div
@@ -31,7 +31,7 @@ import Footer from "../components/footer.astro";
         bg-[var(--color-secondary)]/[0.25]
         blur-3xl
       "
-    ></div>
+      ></div>
 
       <!-- BOTTOM RIGHT BLUR -->
       <div
@@ -90,7 +90,7 @@ import Footer from "../components/footer.astro";
       ></div>
 
       <!-- PAGE CONTENT -->
-      <div class="relative z-10 px-6 py-6 sm:px-20 sm:py-8">
+      <div class="relative z-10 px-6 py-6 sm:px-10 sm:py-8">
         <slot />
       </div>
 
