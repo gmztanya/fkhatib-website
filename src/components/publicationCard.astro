@@ -5,13 +5,13 @@ import Card from "./card.astro";
 
 const { publication, tinted = false } = Astro.props;
 
-const { title, authors, journal, year, doi, pdf } = publication;
+const { title, authors, journal, year, doi, pdf, volume } = publication;
 ---
 
 <Card variant="accent" class={tinted ? "bg-[var(--color-secondary-tinted)]" : ""}>
   <!-- Top Meta Data -->
   <p class="text-sm text-muted mb-1">
-    {year} · {journal}
+    {year} · {journal} . {volume}
   </p>
 
   <!-- Title -->
@@ -36,13 +36,15 @@ const { title, authors, journal, year, doi, pdf } = publication;
   <!-- Actions -->
   <div class="flex gap-3 mt-3 flex-wrap">
     <Button
+      class="copy-btn"
       data-citation={`${authors.join(", ")}. ${title}. ${journal} (${year})${
-        doi && doi.toLowerCase() !== "n/a" ? ` ${doi}` : ""
+        volume ? ` ${volume}` : ""
+      }${
+        doi ? ` ${doi}` : ""
       }`}
     >
       Copy Citation
     </Button>
-
     {
       pdf && (
         <Link href={pdf} external newTab>

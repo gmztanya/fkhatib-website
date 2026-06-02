@@ -10,6 +10,7 @@
     ],
     "journal": "Acta Crystallographica Section D",
     "year": 2025,
+    "volume":"",
     "doi": "https://doi.org/10.1107/S2059798325008149",
     "pdf": "https://www.cis.umassd.edu/~fkhatib/Papers/PDB-REDO.pdf"
   },
@@ -21,14 +22,16 @@
     ],
     "journal": "ACM Games: Research and Practice",
     "year": 2024,
+    "volume":"",
     "doi": "https://dl.acm.org/doi/10.1145/3651278",
     "pdf": "https://www.cis.umassd.edu/~fkhatib/Papers/ACM_Games.pdf"
   },
   {
     "title": "Answering Question One in Google v. Oracle: The Creativity of Computer Programmers",
     "authors": ["Clifford RD", "Khatib F", "Kershaw TC", "El-Nasan A"],
-    "journal": "The Journal of the Copyright Society (Volume 70)",
+    "journal": "70 J. Copyright Soc'y",
     "year": 2023,
+    "volume":"",
     "doi": "https://doi.org/10.2139/ssrn.4267334",
     "pdf": "https://www.cis.umassd.edu/~fkhatib/Papers/CopyrightSociety2023.pdf"
   },
@@ -37,6 +40,7 @@
     "authors": ["Delgado-Cunningham K", "López T", "Khatib F", "Arias T", "DuBois RM"],
     "journal": "Structure",
     "year": 2022,
+    "volume":"",
     "doi": "https://doi.org/10.1016/j.str.2022.10.010",
     "pdf": "https://www.cis.umassd.edu/~fkhatib/Papers/Structure2022.pdf"
   },
@@ -45,6 +49,7 @@
     "authors": ["Kershaw TC", "Clifford RD", "Khatib F", "El-Nasan A"],
     "journal": "Psychology of Aesthetics, Creativity, and the Arts",
     "year": 2022,
+    "volume":"",
     "doi": "https://doi.org/10.1037/aca0000457",
     "pdf": "https://www.cis.umassd.edu/~fkhatib/Papers/CScreativeWorks.pdf"
   },
@@ -53,7 +58,8 @@
     "authors": ["Miller JA", "Khatib F", "Hammond H", "Cooper S", "Horowitz S"],
     "journal": "Nature Structural & Molecular Biology",
     "year": 2020,
-    "doi": "N/A",
+    "volume":"27:769-770",
+    "doi": "",
     "pdf": "https://www.cis.umassd.edu/~fkhatib/Papers/FolditEduNSMB.pdf"
   },
   {
@@ -61,7 +67,8 @@
     "authors": ["Leman JK", "Weitzner BD", "Lewis SM", "et.al."],
     "journal": "Nature Methods",
     "year": 2020,
-    "doi": "N/A",
+    "volume":"17:665-680",
+    "doi": "",
     "pdf": "https://www.cis.umassd.edu/~fkhatib/Papers/RosettaNatureMethods.pdf"
   },
   {
@@ -69,15 +76,17 @@
     "authors": ["Khatib F", "Desfosses A", "Players F", "Koepnick B", "Flatten J", "Popović Z", "Baker D", "Cooper S", "Gutsche I", "Horowitz S"],
     "journal": "PLOS Biology",
     "year": 2019,
-    "doi": "N/A",
+    "volume":"17(11):e3000472",
+    "doi": "",
     "pdf": "https://www.cis.umassd.edu/~fkhatib/Papers/PLOSbio2019.pdf"
   },
   {
-    "title": "NDe novo protein design by citizen scientists",
+    "title": "De novo protein design by citizen scientists",
     "authors": ["Koepnick B", "Flatten J", "Husain T", "Ford A", "Silva DA", "Bick M", "Bauer A", "Liu G", "Ishida Y", "Boykov A", "Estep RD", "Kleinfelter S", "Wei L", "Players F", "Montelione GT", "Popović Z", "Khatib F", "Cooper S", "Baker D"],
     "journal": "Nature",
     "year": 2019,
-    "doi": "N/A",
+    "volume":"570:390–394",
+    "doi": "",
     "pdf": "https://www.cis.umassd.edu/~fkhatib/Papers/Nature2019Design.pdf"
   },
   {
@@ -85,7 +94,8 @@
     "authors": ["Keasar C", "McGuffin LJ", "Wallner B", "Chopra G", "Adhikari B", "Bhattacharya D", "Blake L", "Bortot L", "Cao R", "Dhanasekaran BK", "Dimas I", "Faccioli RA", "Faraggi E", "Ganzynkowicz R", "Ghosh S", "Giełdoń A", "Golon L", "He Y", "Heo L", "Hou J", "Khan M", "Khatib F",  "Khoury GA", "Kieslich C", "Kim DE", "Krupa P", "Lee GR","Li H", "Li J", "Lipska A", "Liwo A", "Maghrabi A", "Mirdita M", "Mirzaei S", "Mozolewska MA", "Onel M", "Ovchinnikov S", "Shah A", "Shah U", "Sidi T", "Sieradzan AK", "Ślusarz M", "Ślusarz R", "Smadbeck J", "Tamamis P", "Trieber N", "Wirecki T", "Yin Y", "Zhang Y", "Bacardit J", "Baranowski M", "Chapman N", "Cooper S", "Defelicibus A", "Flatten J", "Koepnick B", "Popović Z", "Zaborowski B", "Baker D", "Cheng J", "Czaplewski C", "Delbem AC", "Floudas C", "Kloczkowski A", "Ołdziej S", "Levitt M", "Scheraga H", "Seok C", "Söding J", "Vishveshwara S", "Xu D; Foldit Players consortium", "Crivelli S"],
     "journal": "Scientific Reports",
     "year": 2018,
-    "doi": "N/A",
+    "volume":"8:9939",
+    "doi": "",
     "pdf": "https://www.cis.umassd.edu/~fkhatib/Papers/WeFold2-3.pdf"
   },
   {
@@ -93,7 +103,8 @@
     "authors": ["Kleffner R", "Flatten J", "Leaver-Fay A", "Baker D", "Siegel JB", "Khatib F", "Cooper S"],
     "journal": "Bioinformatics",
     "year": 2017,
-    "doi": "N/A",
+    "volume":"33(17): 2765-2767",
+    "doi": "",
     "pdf": "https://www.cis.umassd.edu/~fkhatib/Papers/FolditStandalone.pdf"
   },
   {
@@ -101,7 +112,8 @@
     "authors": ["Horowitz S", "Koepnick B", "Martin R", "Tymieniecki A", "Winburn A", "Cooper S", "Flatten J", "Rogawski D", "Koropatkin N", "Hailu T", "Jain N", "Koldewey P", "Ahlstrom L", "Chapman M", "Sikkema A", "Skiba M", "Maloney F", "Beinlich F", "Players F", "UMich S", "Popović Z", "Baker D", "Khatib F", " Bardwell J"],
     "journal": "Nature Communications",
     "year": 2016,
-    "doi": "N/A",
+    "volume":"7(12549)",
+    "doi": "",
     "pdf": "https://www.cis.umassd.edu/~fkhatib/Papers/NatureComm.pdf"
   },
   {
@@ -109,7 +121,8 @@
     "authors": ["Rashid M", "Khatib F", "Hoque T", "Sattar A"],
     "journal": "IEEE Transactions on Evolutionary Computation",
     "year": 2015,
-    "doi": "N/A",
+    "volume":"Volume PP(99)",
+    "doi": "",
     "pdf": "https://www.cis.umassd.edu/~fkhatib/Papers/IEEE_TEC.pdf"
   },
   {
@@ -117,7 +130,8 @@
     "authors": ["Khoury G", "Liwo A", "Khatib F",  "Zhou H", "Chopra G", "Bacardit B", "Bortot LO", "Faccioli RA", "Deng X", "He Y", "Krupa P", "Li J", "Mozolewska MA", "Sieradzan AK", "Smadbeck J", "Wirecki T", "Cooper S", "Flatten J", "Xu K", "Baker D", "Cheng J", "Delbem ACB", "Floudas CA", "Keasar C", "Levitt M", "Popović Z", "Scheraga HA", "Skolnick J", "Crivelli SN", "Players F"],
     "journal": "Proteins: Structure, Function, and Bioinformatics",
     "year": 2014,
-    "doi": "N/A",
+    "volume":"89(9):1850-1868",
+    "doi": "",
     "pdf": "https://www.cis.umassd.edu/~fkhatib/Papers/WeFold-final.pdf"
   },
   {
@@ -125,7 +139,8 @@
     "authors": ["Cooper S", "Khatib F", "Baker D"],
     "journal": "Structural Biology",
     "year": 2013,
-    "doi": "N/A",
+    "volume":"21(9):1482-4",
+    "doi": "",
     "pdf": "https://www.cis.umassd.edu/~fkhatib/Papers/StructureCommentary.pdf"
   },
   {
@@ -133,7 +148,8 @@
     "authors": ["Eiben CB", "Siegel JB", "Bale J", "Cooper S", "Khatib F", "Shen B", "Players F", "Stoddard B", "Popović Z", "Baker D"],
     "journal": "Nature Biotechnology",
     "year": 2012,
-    "doi": "N/A",
+    "volume":"30(2):190-2",
+    "doi": "",
     "pdf": "https://www.cis.umassd.edu/~fkhatib/Papers/NatureBiotech.pdf"
   },
   {
@@ -141,7 +157,8 @@
     "authors": ["Khatib F", "Dimaio F", "Foldit Contenders Group", "Foldit Void Crushers Group", "Cooper S", "Kazmierczyk M", "Gilski M", "Krzywda S", "Zabranska H", "Pichova I", "Thompson J", "Popović Z", "Jaskolski M", "Baker D"],
     "journal": "Nature Structural & Molecular Biology",
     "year": 2011,
-    "doi": "N/A",
+    "volume":"18(10):1175-7",
+    "doi": "",
     "pdf": "https://www.cis.umassd.edu/~fkhatib/Papers/nsmb.2119.pdf"
   },
   {
@@ -149,15 +166,17 @@
     "authors": ["Khatib F", "Cooper S", "Tyka M", "Xu K", "Makedon I", "Popović Z", "Baker D", "Players F"],
     "journal": "Proceedings of the National Academy of Sciences USA",
     "year": 2011,
-    "doi": "N/A",
+    "volume":"108(47):18949-18953",
+    "doi": "",
     "pdf": "https://www.cis.umassd.edu/~fkhatib/Papers/PNAS-2011-Khatib-1115898108.pdf"
   },
   {
     "title": "Analysis of Social Gameplay Macros in the Foldit Cookbook",
     "authors": ["Cooper S", "Khatib F", "Makedon I", "Lu H", "Barbero J","Baker D", "Fogarty J", "Popović Z", "Players F"],
-    "journal": "Proceedings of the Sixth international Conference on the Foundations of Digital Games",
+    "journal": "Proceedings of the Sixth international Conference on the Foundations of Digital Games (FDG)",
     "year": 2011,
-    "doi": "N/A",
+    "volume":"9-14",
+    "doi": "",
     "pdf": "https://www.cis.umassd.edu/~fkhatib/Papers/fdg2011.pdf"
   },
 
@@ -166,7 +185,8 @@
     "authors": ["Gilski M", "Kazmierczyk M", "Krzywda S", "Zabranska H", "Cooper S", "Popović Z", "Khatib F", "Dimaio F", "Thompson J", "Baker D", "Pichova I", "Jaskolski M"],
     "journal": " Acta Crystallographica Section D: Biological Crystallography",
     "year": 2011,
-    "doi": "N/A",
+    "volume":"67(11):907-914",
+    "doi": "",
     "pdf": "https://www.cis.umassd.edu/~fkhatib/Papers/ActaCrystallographica.pdf"
   },
   {
@@ -174,7 +194,8 @@
     "authors": ["Cooper S", "Khatib F", "Treuille A", "Barbero J", "Lee J", "Beenen M", "Leaver-Fay A", "Baker D", "Popović Z", "Players F"],
     "journal": "Nature",
     "year": 2010,
-    "doi": "N/A",
+    "volume":"466(7307):756-60",
+    "doi": "",
     "pdf": "https://www.cis.umassd.edu/~fkhatib/Papers/naturePaper.pdf"
   },
    {
@@ -182,7 +203,8 @@
     "authors": ["Cooper S", "Treuille A", "Barbero J", "Leaver-Fay A", "Tuite K", "Khatib F", "Snyder AC", "Beenen M", "Salesin D", "Baker D", "Popović Z", "Players F"],
     "journal": "Proceedings of the Fifth international Conference on the Foundations of Digital Games, FDG",
     "year": 2010,
-    "doi": "N/A",
+    "volume":"40-47",
+    "doi": "",
     "pdf": "https://www.cis.umassd.edu/~fkhatib/Papers/foldit-fdg2010.pdf"
   },
   {
@@ -190,7 +212,8 @@
     "authors": ["Khatib F", "Rohl CA", "Karplus K"],
     "journal": "Bioinformatics",
     "year": 2009,
-    "doi": "N/A",
+    "volume":"25: i281-i288",
+    "doi": "",
     "pdf": "https://www.cis.umassd.edu/~fkhatib/Papers/Pokefind.pdf"
   },
   {
@@ -198,7 +221,8 @@
     "authors": ["Khatib F", "Weirauch MT", "Rohl CA"],
     "journal": "Bioinformatics",
     "year": 2006,
-    "doi": "N/A",
+    "volume":"22(14): 252-259",
+    "doi": "",
     "pdf": "https://www.cis.umassd.edu/~fkhatib/Papers/Knotfind.pdf"
   }
 ]
