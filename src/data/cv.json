@@ -5,26 +5,22 @@
     "org": "University of Massachusetts Dartmouth",
     "image": "/images/fkhatib.jpg"
   },
-  "education": [
-    "Ph.D. in Bioinformatics (2002 - 2008), University of California, Santa Cruz, CA",
-    "B.A. in Applied Mathematics (1997 - 2001), University of California, Berkeley, CA"
-  ],
-  "experience": [
+  "sections": [
     {
-      "period": "2008 - 2013",
-      "text": "Postdoctoral fellow. Dr. David Baker; Department of Biochemistry, University of Washington, Seattle, WA."
+      "title": "Education",
+      "items": [
+        "Ph.D. in Bioinformatics (2002 - 2008), University of California, Santa Cruz, CA",
+        "B.A. in Applied Mathematics (1997 - 2001), University of California, Berkeley, CA"
+      ]
     },
     {
-      "period": "2005 - 2008",
-      "text": "Graduate Student Researcher. Dr. Kevin Karplus; Department of Biomolecular Engineering, University of California, Santa Cruz, CA."
-    },
-    {
-      "period": "2002 - 2005",
-      "text": "Graduate Student Researcher. Dr. Carol A. Rohl; Department of Biomolecular Engineering, University of California, Santa Cruz, CA."
-    },
-    {
-      "period": "2001",
-      "text": "Undergraduate research. Dr. Lior Pachter; Department of Mathematics, University of California, Berkeley, CA."
+      "title": "Research and Professional Experience",
+      "items": [
+        "<strong>2008 - 2013:</strong> Postdoctoral fellow. Dr. David Baker; Department of Biochemistry, University of Washington, Seattle, WA.",
+        "<strong>2005 - 2008:</strong> Graduate Student Researcher. Dr. Kevin Karplus; Department of Biomolecular Engineering, University of California, Santa Cruz, CA.",
+        "<strong>2002 - 2005:</strong> Graduate Student Researcher. Dr. Carol A. Rohl; Department of Biomolecular Engineering, University of California, Santa Cruz, CA.",
+        "<strong>2001:</strong> Undergraduate research. Dr. Lior Pachter; Department of Mathematics, University of California, Berkeley, CA."
+      ]
     }
   ]
 }

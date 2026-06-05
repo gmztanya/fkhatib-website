@@ -25,9 +25,9 @@ const { title, authors, journal, year, doi, pdf, volume } = publication;
     {authors.join(", ")}
   </p>
 
-  <!-- Doi (Only if exists and not N/A) -->
+  <!-- Doi (Only if exists) -->
   {
-    doi && doi.toLowerCase() !== "n/a" && (
+    doi && (
       <Link href={doi} external newTab variant="muted" class="mb-1 block">
         {doi.replace("https://", "")}
       </Link>

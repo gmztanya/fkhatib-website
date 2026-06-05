@@ -43,35 +43,26 @@ import cv from "../data/cv.json";
       </div>
     </Card>
 
-    <!-- Education -->
-    <Card variant="accent" noPadding>
-      <div class="tinted-bg px-5 py-4">
-        <Heading level="h3" variant="md" class="uppercase" noMargin> Education </Heading>
-      </div>
-      <div class="p-5">
-        <ul class="space-y-2">
-          {cv.education.map((item) => (
-            <li>{item}</li>
-          ))}
-        </ul>
-      </div>
-    </Card>
+    <!-- Other Sections (Education, Experience, etc) -->
+    {
+        cv.sections.map((section) => (
+            <Card variant="accent" noPadding>
+                <div class="tinted-bg px-5 py-4">
+                    <Heading level="h3" variant="md" class="uppercase" noMargin>
+                    {section.title}
+                    </Heading>
+                </div>
 
-    <!-- Experience -->
-    <Card variant="accent" noPadding>
-      <div class="tinted-bg px-5 py-4">
-        <Heading level="h3" variant="md" class="uppercase" noMargin> Research and Professional Experience </Heading>
-      </div>
-      <div class="p-5">
-        <ul class="space-y-2">
-          {cv.experience.map((exp) => (
-            <li>
-              <strong>{exp.period}:</strong> {exp.text}
-            </li>
-          ))}
-        </ul>
-      </div>
-    </Card>
+                <div class="p-5">
+                    <ul class="space-y-2">
+                    {section.items.map((item) => (
+                        <li set:html={item}></li>
+                    ))}
+                    </ul>
+                </div>
+            </Card>
+        ))
+    }
 
   </section>
 </PageSection>
